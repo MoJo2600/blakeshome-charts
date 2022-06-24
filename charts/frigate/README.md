@@ -1,6 +1,6 @@
 # frigate
 
-![Version: 6.3.1](https://img.shields.io/badge/Version-6.3.1-informational?style=flat-square) ![AppVersion: 0.10.1](https://img.shields.io/badge/AppVersion-0.10.1-informational?style=flat-square)
+![Version: 7.0.0](https://img.shields.io/badge/Version-7.0.0-informational?style=flat-square) ![AppVersion: 0.10.1](https://img.shields.io/badge/AppVersion-0.10.1-informational?style=flat-square)
 
 NVR With Realtime Object Detection for IP Cameras
 
@@ -60,8 +60,8 @@ helm upgrade --install \
 
 | Name | Email | Url |
 | ---- | ------ | --- |
-| blakeblackshear | blakeb@blakeshome.com |  |
-| billimek | jeff@billimek.com |  |
+| blakeblackshear | <blakeb@blakeshome.com> |  |
+| billimek | <jeff@billimek.com> |  |
 
 ## Source Code
 
@@ -92,10 +92,10 @@ helm upgrade --install \
 | ingress.tls | list | `[]` | list of TLS configurations |
 | nameOverride | string | `""` | Overrides the name of resources |
 | nodeSelector | object | `{}` | Node Selector configuration |
-| persistence.data.accessMode | string | `"ReadWriteOnce"` | [access mode](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes) to use for the PVC |
-| persistence.data.enabled | bool | `false` | Enables persistence for the data directory |
-| persistence.data.size | string | `"10Gi"` | size/capacity of the PVC |
-| persistence.data.skipuninstall | bool | `false` | Do not delete the pvc upon helm uninstall |
+| persistence.media.accessMode | string | `"ReadWriteOnce"` | [access mode](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes) to use for the PVC |
+| persistence.media.enabled | bool | `false` | Enables persistence for the data directory |
+| persistence.media.size | string | `"10Gi"` | size/capacity of the PVC |
+| persistence.media.skipuninstall | bool | `false` | Do not delete the pvc upon helm uninstall |
 | podAnnotations | object | `{}` | Set additonal pod Annotations |
 | probes.liveness.enabled | bool | `true` |  |
 | probes.liveness.failureThreshold | int | `5` |  |
